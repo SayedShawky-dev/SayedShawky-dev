@@ -1,3 +1,4 @@
+{% load static  %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,15 +15,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- fevicon -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <!-- style css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <!-- Responsive-->
-  <link rel="stylesheet" href="css/responsive.css">  
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">  
   <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
   <!-- Tweaks for older IEs-->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -35,7 +36,7 @@
 <body class="main-layout">
   <!-- loader  -->
   <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
   </div>
   <!-- end loader -->
   <!-- header -->
@@ -49,7 +50,7 @@
               <div class="full">
                 <div class="center-desk">
                   <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                    <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
                   </div>
                 </div>
               </div>
@@ -71,7 +72,7 @@
                  </div>
                </div> 
                <div class="mean-last">
-                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div>              
+                       <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> <a href="#">login/sing up</a></div>              
              </div>
            </div>
          </div>
@@ -102,7 +103,7 @@
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="{% static 'images/img2.png' %}"></figure>
                     </div>
                   </div>
                 </div>
@@ -125,7 +126,7 @@
 
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="{% static 'images/img2.png' %}"></figure>
                     </div>
                   </div>
                 </div>
@@ -149,7 +150,7 @@
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="{% static 'images/img2.png' %}"></figure>
                     </div>
                   </div>
                 </div>
@@ -190,7 +191,7 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <figure><img src="images/about.jpg" alt="#" /></figure>
+          <figure><img src="{% static 'images/about.jpg' %}" alt="#" /></figure>
         </div>
       </div>
     </div>
@@ -265,7 +266,7 @@
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my1.jpg"></figure>
+                  <figure><img src="{% static 'images/my1.jpg' %}"></figure>
                   <div class="overlay">
                     <h3>Data Structures</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -274,7 +275,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my2.jpg"></figure>
+                  <figure><img src="{% static 'images/my2.jpg' %}"></figure>
                   <div class="overlay">
                     <h3>Cinematography</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -283,7 +284,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my3.jpg"></figure>
+                  <figure><img src="{% static 'images/my3.jpg' %}"></figure>
                   <div class="overlay">
                     <h3>Skills</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -292,7 +293,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my4.jpg"></figure>
+                  <figure><img src="{% static 'images/my4.jpg' %}"></figure>
                   <div class="overlay">
                     <h3>Teaching Science</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -336,7 +337,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="learn_box">
-          <figure><img src="images/img.jpg" alt="img"/></figure>
+          <figure><img src="{% static 'images/img.jpg' %}" alt="img"/></figure>
         </div>
       </div>
     </div>
@@ -362,7 +363,7 @@
       </div>
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
         <div class="make_img">
-          <figure><img src="images/make_img.jpg"></figure>
+          <figure><img src="{% static 'images/make_img.jpg' %}"></figure>
         </div>
       </div>
     </div>
@@ -482,7 +483,7 @@
 
                       <div class="col-lg-3 col-md-6 col-sm-6 ">
                         <div class="address">
-                          <a href="index.html"> <img src="images/logo1.jpg" alt="logo"></a>
+                          <a href="index.html"> <img src="{% static 'images/logo1.jpg' %}" alt="logo"></a>
                         </div>
                       </div>
                     </div>
@@ -500,14 +501,14 @@
           </footr>
           <!-- end footer -->
           <!-- Javascript files-->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/jquery-3.0.0.min.js"></script>
-          <script src="js/plugin.js"></script>
+          <script src="{% static 'js/jquery.min.js' %}"></script>
+          <script src="{% static 'js/popper.min.js' %}">
+          <script src="{% static 'js/bootstrap.bun' %}"></script>
+          <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+          <script src="{% static 'js/plugin.js' %}"></script>
           <!-- sidebar -->
-          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-          <script src="js/custom.js"></script>
+          <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+          <script src="{% static 'js/custom.js' %}"></script>
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
