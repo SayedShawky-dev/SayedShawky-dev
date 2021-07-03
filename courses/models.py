@@ -7,6 +7,7 @@ type_access_choices = (
 )
 
 class Course(models.Model):
+    #photo = models.ImageField()
     name = models.CharField(max_length=50)
     publish_date = models.DateField(auto_now_add=True)
     description = models.TextField(max_length=1000)
@@ -20,12 +21,14 @@ class Course(models.Model):
         return self.name
     
     
+    
 class Article(models.Model):
     name = models.CharField(max_length=100)
     content = models.TextField(max_length=10000)
     
     def __str__(self):
         return self.name
+    
         
 
 class Exercise(models.Model):
