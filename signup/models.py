@@ -6,3 +6,5 @@ class Signup(models.Model):
     email= models.EmailField(null=False,blank=False)
     password =models.CharField(max_length=100)
     confirm_password = models.CharField(max_length=100)
+    accept_agrement =  models.BooleanField(default=False)
+

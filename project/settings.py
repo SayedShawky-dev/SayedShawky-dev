@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     #my apps
     'courses',
     'portal',
+    'signup',
+    'login',
 ]
 
 MIDDLEWARE = [
